@@ -19,7 +19,7 @@ app.use(require('./routes/property'))
 app.use(require('./routes/auth'));
 
 const corsOptions = {
-  origin: 'http://localhost:5173',
+  origin: 'https://property-listing-client.vercel.app',
 };
 
 app.use(cors(corsOptions));
