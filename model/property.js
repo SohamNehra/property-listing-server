@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
 const propertySchema = new mongoose.Schema({
   ownerFirstName: { type: String, required: true },
@@ -8,6 +8,6 @@ const propertySchema = new mongoose.Schema({
   imageUrl: { type: String },
 });
 
-const Property = mongoose.model('Property', propertySchema);
+const Property = mongoose.model("Property", propertySchema);
 
 module.exports = Property;

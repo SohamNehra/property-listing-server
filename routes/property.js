@@ -1,7 +1,8 @@
 const express = require("express");
 const { body, validationResult } = require("express-validator");
 const router = express.Router();
-const Property = require("../model/property");
+const mongoose = require("mongoose");
+const Property = mongoose.model("Property");
 const requireLogin = require("../middlewears/requireLogin");
 
 // Create a new property
